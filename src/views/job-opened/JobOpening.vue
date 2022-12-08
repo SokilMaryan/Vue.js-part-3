@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar w-[500px] ">
+  <div class="sidebar w-[500px] p-1 border border-gray  bg-white">
     <div class="flex items-center text-center gap-4">
       <h3 class="font-medium m-0 mb-2">Job Opening</h3>
     </div>
@@ -25,7 +25,7 @@
       </span>
     </div>
 
-    <div class="flex gap-5 overflow-y-scroll w-[400px] max-h-[800px] bg-white">
+    <div class="flex gap-5 overflow-y-scroll w-[400px] max-h-[800px] bg-white p-1 border border-gray">
       <!-- Render chose list -->
       <template v-if="!selectedDepartments">
         <div class="flex flex-col gap-0 font-medium w-full">
@@ -67,6 +67,9 @@
       </template>
 
       <template v-else>
+
+        
+
         <div class="flex flex-col gap-0 font-medium w-full">
           <ul
             v-for="jobOpening in filteredRenderingListContact"
